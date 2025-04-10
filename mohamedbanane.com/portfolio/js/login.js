@@ -4,13 +4,6 @@ function validateForm(event) {
     var password = document.getElementById("password").value;
     var errorMessage = document.getElementById("error-msg");
 
-    if ((username === "nserror" && password === "portfolio") || (username === "" && password === "")) {
-        // Rediriger vers le site web nathanserror.com/admin
-        window.location.href = "https://nathanserror.com";
-    } else {
-        errorMessage.style.display = "block";
-        errorMessage.textContent = "Identifiants incorrects!";
-    }
 }
 
 var TxtRotate = function(el, toRotate, period) {
