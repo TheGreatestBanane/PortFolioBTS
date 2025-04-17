@@ -276,7 +276,7 @@
           <link rel="stylesheet" href="../stage/css/btn-download.css">
           <a id="btn_1" class="button dark2">
             <ul>
-              <li>Fiches de réalisations professionnelles</li>
+              <li>Fiches situation 1 (GLPI)</li>
               <li>Téléchargement</li>
               <li>Ouvrez le document</li>
             </ul>
@@ -289,17 +289,42 @@
           document.getElementById('btn_1').addEventListener('click', function(event) {
             event.preventDefault();
             let downloadLink = document.createElement('a');
-            downloadLink.href = '../portfolio/docs/Fiche-E6-BANANE-Mohamed-SISR.pdf';
-            downloadLink.download = 'Fiches de réalisations professionnelles Mohamed BANANE - Épreuve E6 - BTS SIO 2025';
+            downloadLink.href = '../portfolio/docs/Fiche-E6-BANANE-Mohamed-SISR-S1.pdf';
+            downloadLink.download = 'Fiche de Situation GLPI BANANE Mohamed';
             downloadLink.click();
           });
         </script>
-
+        <div class="container">
+          <link rel="stylesheet" href="../stage/css/btn-download.css">
+            <div class="container-btn">
+              <link rel="stylesheet" href="../stage/css/btn-download.css">
+              <a id="btn_2" class="button dark2">
+            <ul>
+              <li>Fiches situation 2 (Borne Wi-Fi)</li>
+              <li>Téléchargement</li>
+              <li>Ouvrez le document</li>
+            </ul>
+                <div>
+                  <svg viewBox="0 0 24 24"></svg>
+                </div>
+              </a>
+            </div>
+            <script>
+              document.getElementById('btn_2').addEventListener('click', function(event) {
+                event.preventDefault();
+                let downloadLink = document.createElement('a');
+                downloadLink.href = '../portfolio/docs/Fiche-E6-BANANE-Mohamed-SISR-S2.pdf';
+                downloadLink.download = 'Fiche de Situation Borne Wi-Fi BANANE Mohamed';
+                downloadLink.click();
+              });
+            </script>
         <script src='../../s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
         <script  src="../stage/js/btn-download.js"></script>
       </div>
     </div>
   </section>
+
+
 
 
 
